@@ -1,0 +1,103 @@
+.skills {
+  padding: 20px;
+  background-color: #00bcd4;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.skills-head {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.skill-item {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.skill-item:hover {
+  transform: translateY(-5px);
+}
+
+.skill-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  height: 15px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  border-radius: 10px;
+  transition: width 1s ease-in-out;
+  background: linear-gradient(90deg, #00bcd4);
+}
+
+.skill-level {
+  font-size: 1rem;
+  color: #777;
+  font-weight: 500;
+}
+
+/* Dark Mode - Temnasiya */
+.dark-mode .skills {
+  background-color: #1e1e2f;
+}
+
+.dark-mode .skills-head {
+  color: #ffffff;
+}
+
+.dark-mode .skill-item {
+  background: #2a2a3b;
+  color: #e0e0e0;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+}
+
+.dark-mode .skill-name {
+  color: #ffd54f;
+}
+
+.dark-mode .progress-bar {
+  background-color: #33334d;
+}
+
+.dark-mode .progress {
+  background: linear-gradient(90deg, #7c4dff, #00e5ff);
+}
+
+.dark-mode .skill-level {
+  color: #bbbbbb;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .skills-list {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-item {
+    padding: 15px;
+  }
+}
